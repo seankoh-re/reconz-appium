@@ -1,0 +1,24 @@
+name: run android tests in Github runner
+
+on: push
+
+jobs: 
+  run-mobile-tests:
+    runs-on: macos-latest
+
+    steps:
+      - name: pull the proejct into the runner
+        uses: actions/checkout@v3
+
+      - name: setup appium
+        run: |
+          npm install -g appium@next
+          appium -v
+          appium &>/dev/null &
+
+
+      - name: run appium android tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: npm run android
