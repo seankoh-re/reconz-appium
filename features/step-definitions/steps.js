@@ -10,7 +10,7 @@ const pages = {
 };
 
 BeforeAll(async () => {
-  await driver.pause(10000);
+  await driver.pause(60000);
 });
 
 Given('I click {string} on the navigation tab', async (screen) => {
