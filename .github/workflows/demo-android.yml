@@ -24,7 +24,7 @@ jobs:
         run: |
           appium driver install uiautomator2
           appium driver list --installed
-          appium -p 4723 &>/dev/null &
+          appium -p 4723
           curl http://127.0.0.1:4723/status
 
       - name: run appium android tests
