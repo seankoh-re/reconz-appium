@@ -13,15 +13,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      #- name: Install UIAutomator2
-      #  run: npm install appium-uiautomator2-driver
-
       - name: setup appium
         run: |
           npm install -g appium@next
           appium -v
           appium &>/dev/null &
           appium driver list --installed
+
+      - name: Install UIAutomator2
+        run: appium driver install uiautomator2
 
       - name: run appium android tests
         uses: reactivecircus/android-emulator-runner@v2
