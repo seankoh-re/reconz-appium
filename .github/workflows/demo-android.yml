@@ -16,8 +16,10 @@ jobs:
       - name: setup appium
         run: |
           npm install -g appium@next
-          appium -v
           
+      - name: Check appium version
+        run: appium -v
+
       - name: Install UIAutomator2 and run Appium
         run: |
           appium driver install uiautomator2
