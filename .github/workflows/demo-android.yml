@@ -19,7 +19,7 @@ jobs:
      // We did not check node_modules directory to GitHub so we need to install dependencies
       - name: Install dependencies
         run: |
-          npm install webdriverio
+          npm install @wdio/cli
 
         
       - name: run appium android tests
