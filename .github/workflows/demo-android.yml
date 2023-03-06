@@ -16,7 +16,10 @@ jobs:
           appium -v
           appium &>/dev/null &
 
-
+     // We did not check node_modules directory to GitHub so we need to install dependencies
+      - run: npm install
+        name: Install dependencies
+        
       - name: run appium android tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
