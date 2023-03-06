@@ -5,6 +5,7 @@ config.capabilities = [
     platformName: 'Android',
     'appium:automationName': 'UIAutomator2',
     'appium:app': './app/app-dev-debug.apk',
+    uiautomator2ServerInstallTimeout: 60000,
     // '/Users/seankoh/RE/reconz-app/android/app/build/outputs/apk/dev/debug/app-dev-debug.apk',
   },
 ];
