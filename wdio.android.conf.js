@@ -6,7 +6,7 @@ config.capabilities = [
     'appium:automationName': 'UIAutomator2',
     'appium:app': './app/app-dev-debug.apk',
     'appium:adbExecTimeout': 60000,
-    'appium:appWaitForLaunch': false,
+    'appium:appWaitForLaunch': true,
     // '/Users/seankoh/RE/reconz-app/android/app/build/outputs/apk/dev/debug/app-dev-debug.apk',
   },
 ];
