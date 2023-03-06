@@ -30,7 +30,8 @@ jobs:
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
-      
+          script: npm run android
+          
       - name: uninstall uiautomator2
         run: |
           adb uninstall io.appium.uiautomator2.server     
