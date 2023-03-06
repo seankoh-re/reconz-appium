@@ -7,9 +7,6 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Change timezone
-        uses: sudo ln -sf /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
-
       - name: pull the project into the runner
         uses: actions/checkout@v3
 
