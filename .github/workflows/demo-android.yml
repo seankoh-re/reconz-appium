@@ -24,7 +24,7 @@ jobs:
         run: |
           appium driver install uiautomator2
           appium driver list --installed
-          Appium -a 127.0.0.1 -p 4723 &>/dev/null &
+      #appium -a 127.0.0.1 -p 4723 &>/dev/null &
           
       - name: run appium android tests
         uses: reactivecircus/android-emulator-runner@v2
