@@ -25,11 +25,12 @@ jobs:
           appium driver install uiautomator2
           appium driver list --installed
           appium -p 4723 &>/dev/null &
-          adb uninstall io.appium.uiautomator2.server     
-          adb uninstall io.appium.uiautomator2.server.test
 
       - name: run appium android tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
-          script: npm run android
+          script: 
+            adb uninstall io.appium.uiautomator2.server     
+            adb uninstall io.appium.uiautomator2.server.test
+            npm run android
