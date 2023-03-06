@@ -7,7 +7,6 @@ config.capabilities = [
     'appium:app': './app/app-dev-debug.apk',
     'appium:adbExecTimeout': 60000,
     'appium:appWaitForLaunch': true,
-    newCommandTimeout: 120,
     // '/Users/seankoh/RE/reconz-app/android/app/build/outputs/apk/dev/debug/app-dev-debug.apk',
   },
 ];
