@@ -27,14 +27,14 @@ jobs:
           appium driver list --installed
           appium -a 127.0.0.1 -p 4723 &>/dev/null &
           
-      - name: run appium android tests
       #  uses: reactivecircus/android-emulator-runner@v2
       #  with:
       #    api-level: 30
       #    target: google_apis
       #    arch: x86_64
       #    script: npm run android
-      - uses: futureware-tech/simulator-action@v2
+      - name: run appium android tests
+        uses: futureware-tech/simulator-action@v2
         with:
           model: 'iPhone 14'
       - run: npm run ios
