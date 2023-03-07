@@ -5,7 +5,6 @@ exports.config = {
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
   runner: 'local',
-
   port: 4723,
   //
   // ==================
@@ -55,7 +54,7 @@ exports.config = {
       // maxInstances can get overwritten per capability. So if you have an in-house Selenium
       // grid with only 5 firefox instances available you can make sure that not more than
       // 5 instances get started at a time.
-      maxInstances: 1,
+      maxInstances: 5,
       //
       //browserName: 'chrome',
       //acceptInsecureCerts: true
@@ -115,7 +114,7 @@ exports.config = {
   //
   // Default timeout in milliseconds for request
   // if browser driver or grid doesn't send response
-  connectionRetryTimeout: 360000,
+  connectionRetryTimeout: 120000,
   //
   // Default request retries count
   connectionRetryCount: 3,
@@ -124,7 +123,7 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  //services: ['appium'],
+  services: ['appium'],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
