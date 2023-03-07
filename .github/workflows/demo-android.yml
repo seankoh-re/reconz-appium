@@ -37,6 +37,7 @@ jobs:
           ram-size: 16384M
           disk-size: 12288M
           cores: 2
+          heap-size: 512M
 
       #  uses: futureware-tech/simulator-action@v2
       #  with:
