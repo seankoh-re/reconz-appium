@@ -15,7 +15,7 @@ jobs:
 
       - name: setup appium
         run: |
-          npm install -g appium@next
+          npm i --save-dev appium@next
           
       - name: Check appium version
         run: appium -v
