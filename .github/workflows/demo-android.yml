@@ -34,6 +34,9 @@ jobs:
           target: google_apis
           arch: x86_64
           script: npm run android
+          ram-size: 16384M
+          disk-size: 12288M
+          cores: 2
 
       #  uses: futureware-tech/simulator-action@v2
       #  with:
